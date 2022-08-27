@@ -1,6 +1,14 @@
 @tailwind base;
-body {
-  @apply text-slate-800;
-}
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply scroll-smooth text-slate-800;
+  }
+  .layout {
+    /* 1100px */
+    max-width: 68.75rem;
+    @apply mx-auto w-11/12;
+  }
+}
